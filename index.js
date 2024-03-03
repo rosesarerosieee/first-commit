@@ -46,6 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
     setInterval(() => {
       currentImage = (currentImage + 1) % images.length;
       showImage(currentImage);
-    }, 2000); // Change image every 2 seconds
+    }, 3000); // Change image every 2 seconds
   });
   
