@@ -167,9 +167,13 @@
     transition: 2s ease-in-out;
 }
 
+.footer i{
+    color: var(--color1)
+}
+
 .footer i:hover{
     transition: 1s ease-in-out;
-    color: var(--color3);
+    color: var(--color2);
     
 }
 
