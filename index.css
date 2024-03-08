@@ -210,22 +210,35 @@
 
     .navbar{
         position: fixed;
-        z-index: 10;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         min-height: 12vh;
-        background-color: red;
-        
+        background-color: var(--color0);        
     }
     
     .nav-menu{
+        display: flex;
         position: relative;
-        left: 0;
-        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
         background-color: transparent;
+        flex-direction: row;
         height: 0;
         width: 0;
+        left: 20px;
+        z-index: 10;
         text-align: center;
+    }
+
+    .nav-link{
+        top: 0;
+        font-size: 0.9rem;
+    }
+    
+    .nav-link:hover{
+        color: var(--color2);
+        font-size: 2rem;
     }
 
     .hamburger{
@@ -268,6 +281,49 @@
         width: 280px;
         height: 280px;
     }
+
+    .aboutme{
+        font-size: 1rem;
+        padding: 50px;
+    }
     
+    .footer{
+        font-size: 1.8rem;
+    }
     
+}
+
+
+@media (min-width: 1201px){
+    .navbar{
+        min-height: 14vh
+    }
+    .nav-link{
+        font-size: 1rem
+    }
+
+    .introduction{
+        font-size: 1.2rem;
+    }
+
+    .profile{
+        font-size: 1.2rem;
+        min-height: 150vh;
+    }
+
+    .aboutme{
+        font-size: 1.2rem;
+    }
+
+    .image1, .image2, .image3{
+        min-width: 420px;
+        min-height: 420px;
+        
+    }
+
+    .footer{
+        font-size: 2rem;
+    }
+
+
 }
